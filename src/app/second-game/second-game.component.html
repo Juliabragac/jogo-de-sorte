@@ -1,0 +1,12 @@
+<div class="container">
+  <form class="form-container" [formGroup]="gameForm"  (submit)="comparaNumero()">
+    <div>
+      <input id="numero-pessoa" formControlName="numeroPessoa" placeholder="Digite um número entre 0 e 10"/>
+    </div>
+    <button (click)="geraNumero()">Gerar Número</button>
+  </form>
+  <div>
+    <h1>Resultado: {{resultado}}</h1>
+    <h1>Numero Gerado: {{resultadoAleatorio}}</h1>
+    <h1>Numero Escolhido: {{resultadoPessoa}}</h1>
+  </div>
